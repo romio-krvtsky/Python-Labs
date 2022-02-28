@@ -1,0 +1,90 @@
+1. text - 5 
+2. lish - 4 
+3. exts - 4 
+4. your - 4 
+5. Engl - 3 
+6. ngli - 3 
+7. glis - 3 
+8. comp - 3 
+9. ract - 2 
+10. acti - 2 
+-----------------------------------------------------
+Mean amount of words: 11.1
+Median amount of words: 13.0
+-----------------------------------------------------
+Hello - 1
+Mr - 1
+Romio - 1
+English - 3
+texts - 4
+for - 2
+beginners - 1
+to - 3
+practice - 1
+reading - 1
+and - 12
+comprehension - 2
+online - 1
+free - 2
+Practicing - 1
+your - 4
+of - 4
+written - 1
+will - 2
+both - 2
+improve - 1
+vocabulary - 1
+understanding - 1
+grammar - 1
+word - 1
+order - 1
+The - 1
+below - 1
+are - 2
+designed - 1
+help - 1
+you - 2
+develop - 1
+while - 1
+giving - 1
+an - 1
+instant - 1
+evaluation - 1
+progress - 1
+Prepared - 1
+by - 1
+experienced - 1
+teachers - 1
+the - 4
+articles - 1
+conversations - 1
+brief - 1
+appropriate - 1
+level - 1
+proficiency - 1
+Take - 1
+multiple-choice - 1
+quiz - 1
+following - 1
+each - 1
+text - 1
+you'll - 1
+get - 1
+results - 1
+immediately - 1
+You - 2
+feel - 1
+challenged - 1
+accomplished - 1
+can - 1
+even - 1
+download - 1
+as - 1
+PDF - 1
+print - 1
+exercises - 1
+It's - 1
+enjoyable - 1
+fun - 1
+Good - 1
+luck - 1

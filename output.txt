@@ -1,21 +1,21 @@
-1. text - 5 
-2. lish - 4 
-3. exts - 4 
-4. your - 4 
-5. Engl - 3 
-6. ngli - 3 
-7. glis - 3 
-8. comp - 3 
-9. ract - 2 
-10. acti - 2 
+1. comprehens - 2 
+2. omprehensi - 2 
+3. mprehensio - 2 
+4. prehension - 2 
+5. practicing - 1 
+6. vocabulary - 1 
+7. understand - 1 
+8. nderstandi - 1 
+9. derstandin - 1 
+10. erstanding - 1 
 -----------------------------------------------------
-Mean amount of words: 11.1
-Median amount of words: 13.0
+Mean amount of words: 9.5
+Median amount of words: 10.0
 -----------------------------------------------------
-Hello - 1
-Mr - 1
-Romio - 1
-English - 3
+hello - 1
+mr - 2
+romio - 2
+english - 3
 texts - 4
 for - 2
 beginners - 1
@@ -26,7 +26,7 @@ and - 12
 comprehension - 2
 online - 1
 free - 2
-Practicing - 1
+practicing - 1
 your - 4
 of - 4
 written - 1
@@ -38,12 +38,12 @@ understanding - 1
 grammar - 1
 word - 1
 order - 1
-The - 1
+the - 5
 below - 1
 are - 2
 designed - 1
 help - 1
-you - 2
+you - 4
 develop - 1
 while - 1
 giving - 1
@@ -51,18 +51,17 @@ an - 1
 instant - 1
 evaluation - 1
 progress - 1
-Prepared - 1
+prepared - 1
 by - 1
 experienced - 1
 teachers - 1
-the - 4
 articles - 1
 conversations - 1
 brief - 1
 appropriate - 1
 level - 1
 proficiency - 1
-Take - 1
+take - 1
 multiple-choice - 1
 quiz - 1
 following - 1
@@ -72,7 +71,6 @@ you'll - 1
 get - 1
 results - 1
 immediately - 1
-You - 2
 feel - 1
 challenged - 1
 accomplished - 1
@@ -80,11 +78,12 @@ can - 1
 even - 1
 download - 1
 as - 1
-PDF - 1
+pdf - 1
 print - 1
 exercises - 1
-It's - 1
+it's - 1
 enjoyable - 1
 fun - 1
-Good - 1
+good - 1
 luck - 1
+goodbye - 1

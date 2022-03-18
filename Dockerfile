@@ -1,6 +1,6 @@
 FROM python
 
-WORKDIR /temp
+WORKDIR /lab1
 
 COPY . .
 

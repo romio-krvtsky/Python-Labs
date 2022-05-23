@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: perfectparser
+Version: 5.2.3
+Summary: Demo library
+Home-page: https://github.com/romio-krvtsky?tab=repositories
+Author: Roman krivetskiy
+Author-email: romik.krivetskiy@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Parser on Python
+

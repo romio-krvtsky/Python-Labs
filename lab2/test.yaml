@@ -1,0 +1,48 @@
+__code__:
+  co_argcount: 2
+  co_cellvars: []
+  co_code:
+  - 116
+  - 0
+  - 160
+  - 1
+  - 124
+  - 0
+  - 124
+  - 1
+  - 20
+  - 0
+  - 116
+  - 2
+  - 20
+  - 0
+  - 161
+  - 1
+  - 83
+  - 0
+  co_consts:
+  - null
+  co_filename: C:\Users\HUAWEI\PycharmProjects\lab2\main.py
+  co_firstlineno: 9
+  co_flags: 67
+  co_freevars: []
+  co_kwonlyargcount: 0
+  co_lnotab:
+  - 0
+  - 1
+  co_name: butoma
+  co_names:
+  - math
+  - sin
+  - c
+  co_nlocals: 2
+  co_posonlyargcount: 0
+  co_stacksize: 4
+  co_varnames:
+  - a
+  - b
+  type: CodeType
+__globals__:
+  c: 2
+  math: module
+type: FunctionType

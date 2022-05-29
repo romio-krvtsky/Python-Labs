@@ -1,10 +1,19 @@
 from django.db import models
+from django.urls import reverse
 
 
 # Create your models here.
+
+
 class Product(models.Model):
     name = models.CharField(max_length=200, default='')
-    photo = models.ImageField(null=True, blank=True, upload_to='images/')
+    photo = models.ImageField(null=True, blank=True)
+    price = models.FloatField()
+    STATE_CHOICES = (
+        ('new', 'new'),
+        ('used', 'used'),
+    )
+    state = models.CharField(max_length=4, choices=STATE_CHOICES, default='used')
     description = models.TextField(max_length=500, default='')
     post_date = models.DateField(auto_now_add=True)
 
@@ -12,3 +21,14 @@ class Product(models.Model):
 
     def __str__(self):
         return f'{self.name} of '
+
+    @property
+    def imageURL(self):
+        try:
+            url = self.photo.url
+        except:
+            url = ''
+        return url
+
+    def get_absolute_url(self):
+        return reverse('product', kwargs={'product_id': self.id})

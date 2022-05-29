@@ -22,7 +22,7 @@ from lab3 import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('marketplace.urls')),
-    path('', include('users.urls')),
+    # path('', include('users.urls')),
 ]
 
 if settings.DEBUG:

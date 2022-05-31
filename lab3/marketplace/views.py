@@ -1,7 +1,10 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
+
+from marketplace.forms import AddProductForm
 from marketplace.models import Product
+
 
 # Create your views here.
 
@@ -15,12 +18,12 @@ class HomePage(ListView):
 class ViewProduct(DetailView):
     model = Product
     template_name = 'marketplace/product.html'
-    slug_url_kwarg = 'product_slug'
     context_object_name = 'product'
 
 
+class PostProduct(CreateView):
+    form_class = AddProductForm
+    template_name = 'marketplace/post_product.html'
 
-def index(request, product_id):
-    return HttpResponse(f'product {product_id}')
 
 

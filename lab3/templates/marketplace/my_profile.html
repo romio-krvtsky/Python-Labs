@@ -1,6 +1,4 @@
 {% extends 'marketplace/base.html' %}
-{% load static %}
-
 
 {% block content %}
 
@@ -14,7 +12,8 @@
                     <h5><strong>{{ pr.name }}</strong></h5>
                     <hr>
                     <a class="btn btn-outline-success" href="{{ pr.get_absolute_url }}">View</a>
-                    <h4 style="display: inline-block; float: right"><strong>${{ pr.price|floatformat:2 }}</strong></h4>
+                    <a class="btn btn-outline-warning" href="{% url 'edit_product' pr.pk %}">Edit</a>
+                    <a class="btn btn-outline-danger" href="{% url 'delete_product' pr.pk %}">Delete</a>
                 </div>
 
             </div>
@@ -23,7 +22,6 @@
 
     </div>
 
-{% endblock content %}
 
 
-
+{% endblock %}

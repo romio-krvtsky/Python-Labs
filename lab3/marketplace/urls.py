@@ -2,12 +2,11 @@ from django.urls import path
 from django.contrib import admin
 from .views import *
 
-
 urlpatterns = [
-    path('', ProductsPage.as_view(), name='home'),
-    # path('about/', , name='about'),
-    # path('my_profile/', , name='my_profile'),
-    # path('sell/', , name='add_product'),
-    # path('product/<int:product_id>/', show_product, name='product')
+    path('', HomePage.as_view(), name='home'),
+    path('product/<int:pk>/', ViewProduct.as_view(), name='product'),
+    path('post_product', PostProduct.as_view(), name='sell'),
+    path('register/', RegisterUser.as_view(), name='register')
+
 
 ]

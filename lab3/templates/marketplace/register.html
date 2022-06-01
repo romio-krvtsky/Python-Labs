@@ -1,0 +1,23 @@
+{% extends 'marketplace/base.html' %}
+
+
+{% block content %}
+    <div style="text-align: center;">
+        <h1>
+            <div style="text-align: center;">Registration</div>
+        </h1>
+
+        <form method="post">
+            {% csrf_token %}
+
+            {% for f in form %}
+                <p><label class="form-label" for="{{ f.id_for_label }}">{{ f.label }}: </label>{{ f }}</p>
+                <div class="form-error">{{ f.errors }}</div>
+            {% endfor %}
+            <button type="submit">Sign Up</button>
+            <hr>
+            <p class="message">Already registered? <a href='#'>Sign In</a></p>
+        </form>
+    </div>
+
+{% endblock content %}

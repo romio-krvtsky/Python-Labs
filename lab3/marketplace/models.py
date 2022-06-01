@@ -17,7 +17,6 @@ class User(AbstractUser):
 
 class Product(models.Model):
     name = models.CharField(max_length=200, default='')
-    # slug = models.SlugField(max_length=255, unique=True, db_index=True, verbose_name="URL")
     photo = models.ImageField(null=True, blank=True)
     price = models.FloatField()
     STATE_CHOICES = (

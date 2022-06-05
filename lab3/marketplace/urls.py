@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import *
+from .views import HomePage, MyProfile, ViewProduct, EditProduct, DeleteProduct, PostProduct, RegisterUser, LoginUser, \
+    LogoutUser
 
 urlpatterns = [
     path('', HomePage.as_view(), name='home'),

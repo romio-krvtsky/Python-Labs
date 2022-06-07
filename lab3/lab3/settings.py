@@ -13,6 +13,8 @@ import os.path
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+# import dj_database_url
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
@@ -26,8 +28,9 @@ DEBUG = True
 
 # ALLOWED_HOSTS = []
 # ALLOWED_HOSTS = ['0.0.0.0:8000']
-ALLOWED_HOSTS = ['198.211.99.20', 'localhost', '127.0.0.1', '0.0.0.0:8000']
+ALLOWED_HOSTS = ['198.211.99.20', 'localhost', '127.0.0.1', '0.0.0.0:8000', 'olxbestclone.herokuapp.com']
 
+CSRF_TRUSTED_ORIGINS = ['https://olxbestclone.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
@@ -101,28 +104,33 @@ WSGI_APPLICATION = 'lab3.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'lab3',
+#         'USER': 'postgres',
+#         'PASSWORD': 'ukraine76',
+#         'HOST': '127.0.0.1',
+#         'PORT': '5432',
+#     }
+# }
+
+# COMPOSE
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'lab3',
-        'USER': 'postgres',
-        'PASSWORD': 'ukraine76',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('POSTGRES_NAME'),
+        'USER': os.environ.get('POSTGRES_USER'),
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
+        'HOST': os.environ.get('POSTGRES_HOST'),
+        'PORT': 5432,
     }
 }
 
-# COMPOSE
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': os.environ.get('POSTGRES_NAME'),
-#         'USER': os.environ.get('POSTGRES_USER'),
-#         'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
-#         'HOST': os.environ.get('POSTGRES_HOST'),
-#         'PORT': 5432,
-#     }
-# }
+# DATABASES = {}
+#
+# DATABASES['default'] = dj_database_url.config(
+#     default='postgres://kwwzkwhwoijprj:779689e5e403f5c15de3ceeff6dd850e302427d1fea501775ea2e7ccfa3e861a@ec2-52-44-13-158.compute-1.amazonaws.com:5432/d4gdjr0il3dsbt')
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators

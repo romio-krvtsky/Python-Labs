@@ -1,5 +1,6 @@
+import asyncio
 import logging
-
+from asgiref.sync import sync_to_async
 from django.contrib.auth import login
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -11,7 +12,13 @@ from marketplace.forms import AddProductForm, RegistrationForm
 from marketplace.models import Product
 
 logger = logging.getLogger('main')
+
+
 # Create your views here.
+
+@sync_to_async
+def get_my_products(self):
+    return Product.objects.filter(owner=self.request.user)
 
 
 class HomePage(ListView):
@@ -63,7 +70,7 @@ class MyProfile(LoginRequiredMixin, ListView):
     login_url = reverse_lazy('login')
 
     def get_queryset(self):
-        return Product.objects.filter(owner=self.request.user)
+        return asyncio.run(get_my_products(self))
 
 
 class RegisterUser(CreateView):

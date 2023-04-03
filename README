@@ -1,3 +1,18 @@
 lab 1:
+Text analyzer.
+
+The input is text data. Necessary count and output: how many times each word is repeated in the specified text average
+number of words in a sentence median number of words in a sentence top-K most frequently repeated letter N-grams
+(K and N have default values of 10 and 4, but it should be possible to set them from the keyboard).
+For the solution, use the container dict () or its analogues and built-in operations on strings.
+Provide for punctuation marks.
 
 lab 3:
+Django Web Application: E-commerce
+
+Main tasks:
+ • Implement CRUD (create, read, update, delete) operations;
+ • Add all models to the admin panel. Display related models on one page;
+ • Implement authorization/authentication mechanisms;
+ • Add logging;
+ • Add tests;
